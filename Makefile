@@ -1,2 +1,3 @@
-resume:
-	lualatex resume_cv.tex
+
+all:
+	xelatex resume.tex
