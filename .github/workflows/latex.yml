@@ -6,13 +6,7 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
-      - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: resume.tex
-          args: -xelatex -file-line-error -interaction=nonstopmode
-      - run: mkdir public
-      - run: mv resume.pdf public/
+      - run: make docker
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
