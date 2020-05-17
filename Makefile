@@ -1,3 +1,3 @@
 
 all:
-	xelatex resume.tex
+	mkdir pdf && xelatex resume.tex && mv resume.pdf pdf/
