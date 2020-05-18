@@ -7,8 +7,8 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
       - run: make docker
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Arifact publishing
+        uses: actions/upload-artifact@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./pdf
+          name: CV
+          path: pdf/resume.pdf
