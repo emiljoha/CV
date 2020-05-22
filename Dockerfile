@@ -1,9 +1,4 @@
-FROM alpine:latest
-
-RUN \
-    apk add --no-cache \
-    texlive-full \
-    make
+FROM emijoh/texlive
 
 COPY / /
 
