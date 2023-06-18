@@ -90,7 +90,7 @@
   pdfauthor={},
   pdfsubject={},
   pdfkeywords={},
-  colorlinks=false,
+  colorlinks=true,
   allbordercolors=white
 }
 
